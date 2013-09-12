@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Test Google Map</title>
+  <link rel="stylesheet" media="all" type="text/css" href="style.css" />
+</head>
+<body>
+
+<h1>Trouver un magasin</h1>
+
+<div id="googleMap">
+  <form>
+  <fieldset>
+    <label for="mapSearch">Entrez votre ville ou code postal pour trouver la boutique KOOKAI la plus proche de chez vous :</label>
+    <input id="mapSearch" type="text" value="Ville ou code postal" />
+    <a href="javascript:;" class="focusOnMap">OK</a>
+  </fieldset>
+  </form>
+
+  <div class="canvasContainer">
+    <div id="map_canvas"></div>
+  </div>
+
+  <div class="shopList jscrollpane"></div>
+</div>
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
